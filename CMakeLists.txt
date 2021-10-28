@@ -23,9 +23,9 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 option(OPENEXR_BUILD_ILMBASE        "Build IlmBase"              ON)
 option(OPENEXR_BUILD_OPENEXR        "Build OpenEXR"              ON)
-option(OPENEXR_BUILD_PYTHON_LIBS    "Build the Python bindings"  ON)
+option(OPENEXR_BUILD_PYTHON_LIBS    "Build the Python bindings"  OFF)
 option(OPENEXR_BUILD_VIEWERS        "Build the viewers"          OFF)
-option(OPENEXR_BUILD_TESTS          "Enable the tests"           ON)
+option(OPENEXR_BUILD_TESTS          "Enable the tests"           OFF)
 # when enabled, adds the (long) running fuzz tests to the "make test" rule
 # even when this is disabled, as long as OPENEXR_BUILD_TESTS is enabled, one
 # can still run "make fuzz" (or equivalent)
@@ -192,3 +192,5 @@ if(OPENEXR_BUILD_VIEWERS AND FLTK_FOUND AND OpenGL_FOUND)
 else()
     message(INFO, "Skipping OpenEXR Viewers")
 endif()
+
+install(DIRECTORY cmake DESTINATION .)
