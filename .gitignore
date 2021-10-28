@@ -21,3 +21,6 @@ missing
 .DS_Store
 *.project
 *.cproject
+
+_rez_build/
+.vscode
