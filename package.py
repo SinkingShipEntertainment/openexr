@@ -46,6 +46,3 @@ def commands():
     env.OPENEXR_ROOT = "{root}"
     env.ILMBASE_ROOT = "{root}"
     env.PATH.prepend("{root}/bin")
-
-    if building:
-        env.CMAKE_MODULE_PATH.append("{root}/rez_cmake")
