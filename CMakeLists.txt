@@ -80,3 +80,5 @@ option(OPENEXR_VIEWERS_ENABLE "Enables configuration of the viewers module" OFF)
 if(OPENEXR_VIEWERS_ENABLE)
   add_subdirectory(OpenEXR_Viewers)
 endif()
+
+install(DIRECTORY rez_cmake DESTINATION .)
