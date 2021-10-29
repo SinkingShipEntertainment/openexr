@@ -35,7 +35,7 @@ endmacro()
 # upload the results, cmake has builtin support for
 # submitting to CDash, or any server who speaks the
 # same protocol
-# 
+#
 # These settings will need to be set for your environment,
 # and then a script such as the example in
 #
@@ -46,7 +46,7 @@ endmacro()
 # cmake -S cmake/SampleCTestScript.cmake
 #
 # [or whatever you name the file you edit]
-# 
+#
 #set(CTEST_PROJECT_NAME "OpenEXR")
 #set(CTEST_NIGHTLY_START_TIME "01:01:01 UTC")
 #set(CTEST_DROP_METHOD "http") # there are others...
@@ -67,7 +67,7 @@ add_subdirectory(OpenEXR)
 
 # should this just be always on and we conditionally compile what
 # is found and warn otherwise? or error out?
-option(PYILMBASE_ENABLE "Enables configuration of the PyIlmBase module" ON)
+option(PYILMBASE_ENABLE "Enables configuration of the PyIlmBase module" OFF)
 if(PYILMBASE_ENABLE)
   if (${CMAKE_VERSION} VERSION_LESS "3.12.0")
     message(WARNING ": CMake version ${CMAKE_VERSION} detected, PyIlmBase uses newer features of cmake (>= 3.12), disabling")
@@ -76,7 +76,7 @@ if(PYILMBASE_ENABLE)
   endif()
 endif()
 
-option(OPENEXR_VIEWERS_ENABLE "Enables configuration of the viewers module" ON)
+option(OPENEXR_VIEWERS_ENABLE "Enables configuration of the viewers module" OFF)
 if(OPENEXR_VIEWERS_ENABLE)
   add_subdirectory(OpenEXR_Viewers)
 endif()
