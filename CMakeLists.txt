@@ -128,3 +128,4 @@ if (DOCS AND NOT OPENEXR_IS_SUBPROJECT)
   add_subdirectory(docs)
 endif()
 
+install(DIRECTORY rez_cmake DESTINATION .)
