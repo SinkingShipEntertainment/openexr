@@ -50,3 +50,5 @@ build-win/
 build-nuget/
 *~
 .vscode
+
+_rez_build
