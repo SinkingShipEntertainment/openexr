@@ -49,3 +49,6 @@ build/
 build-win/
 build-nuget/
 *~
+
+_rez_build/
+.vscode
