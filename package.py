@@ -48,4 +48,4 @@ def commands():
     env.PATH.prepend("{root}/bin")
 
     if building:
-        env.CMAKE_MODULE_PATH.append("{root}/rez_cmake")
+        env.CMAKE_MODULE_PATH.append("{root}/cmake")
