@@ -127,5 +127,3 @@ if (DOCS AND NOT OPENEXR_IS_SUBPROJECT)
   option(INSTALL_DOCS "Set ON to install html documentation" ON)
   add_subdirectory(docs)
 endif()
-
-install(DIRECTORY rez_cmake DESTINATION .)
