@@ -1,6 +1,6 @@
 
 # adapted from FindOpenEXR.cmake in Pixar's USD distro.
-# 
+#
 # The original license is as follows:
 #
 # Copyright 2016 Pixar
@@ -159,6 +159,15 @@ endforeach(OPENEXR_LIB)
 # So #include <half.h> works
 list(APPEND OPENEXR_INCLUDE_DIRS ${OPENEXR_INCLUDE_DIR})
 list(APPEND OPENEXR_INCLUDE_DIRS ${OPENEXR_INCLUDE_DIR}/OpenEXR)
+
+#----------------------------
+# So OIIO can find it
+list(APPEND OPENEXR_INCLUDES ${OPENEXR_INCLUDE_DIR})
+list(APPEND OPENEXR_INCLUDES ${OPENEXR_INCLUDE_DIR}/OpenEXR)
+
+list(APPEND ILMBASE_INCLUDES ${OPENEXR_INCLUDE_DIR})
+list(APPEND ILMBASE_INCLUDES ${OPENEXR_INCLUDE_DIR}/OpenEXR)
+#----------------------------
 
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(OpenEXR
