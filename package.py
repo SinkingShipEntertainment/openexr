@@ -47,5 +47,5 @@ def commands():
     env.ILMBASE_ROOT = "{root}"
     env.PATH.prepend("{root}/bin")
 
-    if building:
-        env.CMAKE_MODULE_PATH.append("{root}/cmake")
+    #if building:
+    #    env.CMAKE_MODULE_PATH.append("{root}/cmake")
