@@ -1,6 +1,6 @@
 name = "openexr"
 
-version = "3.1.5.sse.1.0.0"
+version = "3.1.12.sse.1.0.0"
 
 description = \
     """
