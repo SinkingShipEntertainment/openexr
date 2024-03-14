@@ -63,4 +63,6 @@ def commands():
     env.OPENEXR_LOCATION = "{root}"
     env.OPENEXR_ROOT = "{root}"
     env.ILMBASE_ROOT = "{root}"
+    env.OPENEXR_ROOT_DIR = "{root}"
+    env.ILMBASE_ROOT_DIR = "{root}"
     env.PATH.prepend("{root}/bin")
